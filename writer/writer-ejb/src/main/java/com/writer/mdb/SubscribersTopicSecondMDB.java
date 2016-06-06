@@ -18,7 +18,7 @@ import javax.jms.TextMessage;
  * @author Home
  */
 @MessageDriven(name = "SubscribersTopicSecondMDB", activationConfig = {
-    @ActivationConfigProperty(propertyName = "destinationLookup", propertyValue = "jms/topic/Subscriber"),
+    @ActivationConfigProperty(propertyName = "destinationLookup", propertyValue = "jms/topic/Subscribers"),
     @ActivationConfigProperty(propertyName = "destinationType", propertyValue = "javax.jms.Topic"),
     @ActivationConfigProperty(propertyName = "acknowledgeMode", propertyValue = "Auto-acknowledge")})
 public class SubscribersTopicSecondMDB implements MessageListener {
